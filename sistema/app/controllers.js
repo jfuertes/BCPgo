@@ -28,5 +28,6 @@ window.map="";
   }])
 
 
-
+.controller('perfilController',['$scope', '$http', function($scope, $http){
+  }])
 })();
