@@ -24,6 +24,8 @@ window.map="";
 .controller('acercaController',['$scope', '$http', function($scope, $http){
   }])
 
+.controller('RegistrateController',['$scope', '$http', function($scope, $http){
+  }])
 
 
 

@@ -28,6 +28,12 @@ var app = angular.module('eissonApp', [
           controller: 'acercaController',
           activetab: 'centros'
         }).
+         when('/registrate', {
+          templateUrl: 'views/RegistrarAgenteBCP.html',
+          caseInsensitiveMatch: true,
+          controller: 'RegistrateController',
+          activetab: 'centros'
+        }).
 
      
         
