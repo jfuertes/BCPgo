@@ -35,6 +35,12 @@ var app = angular.module('eissonApp', [
           activetab: 'centros'
         }).
 
+  when('/perfil', {
+          templateUrl: 'views/Perfil.html',
+          caseInsensitiveMatch: true,
+          controller: 'perfilController',
+          activetab: 'centros'
+        }).
      
         
         otherwise({
