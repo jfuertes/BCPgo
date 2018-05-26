@@ -31,5 +31,19 @@ window.map="";
 
 
 .controller('perfilController',['$scope', '$http', function($scope, $http){
+
+         $scope.getperfilbyId= function(){
+        console.log("ejecuta funcion get alarma byid")
+             $http.post('api/getperfilbyId.php', {id: "100"} )
+                .success(function(data) {
+                  console.log(data);
+                  $scope.agencia=data;
+                })
+                .error(function(data) {
+                  console.log('Error: ' + data);
+                  });
+         };
+         
+         $scope.getperfilbyId();
   }])
 })();
