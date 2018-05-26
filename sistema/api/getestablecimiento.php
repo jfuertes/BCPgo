@@ -7,7 +7,7 @@
 
 
 		$q = 'SELECT  *
-				from establecimiento';
+				from establecimientos';
 
 		$stmt = $dbh->prepare($q);
 		$stmt->execute();
