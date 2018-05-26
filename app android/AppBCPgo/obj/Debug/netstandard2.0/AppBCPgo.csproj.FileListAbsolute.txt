@@ -1,0 +1,8 @@
+C:\Users\MAXIMO\source\repos\BCPgo\AppBCPgo\AppBCPgo\AppBCPgo\bin\Debug\netstandard2.0\AppBCPgo.deps.json
+C:\Users\MAXIMO\source\repos\BCPgo\AppBCPgo\AppBCPgo\AppBCPgo\bin\Debug\netstandard2.0\AppBCPgo.dll
+C:\Users\MAXIMO\source\repos\BCPgo\AppBCPgo\AppBCPgo\AppBCPgo\bin\Debug\netstandard2.0\AppBCPgo.pdb
+C:\Users\MAXIMO\source\repos\BCPgo\AppBCPgo\AppBCPgo\AppBCPgo\obj\Debug\netstandard2.0\AppBCPgo.csproj.CoreCompileInputs.cache
+C:\Users\MAXIMO\source\repos\BCPgo\AppBCPgo\AppBCPgo\AppBCPgo\obj\Debug\netstandard2.0\AppBCPgo.AssemblyInfoInputs.cache
+C:\Users\MAXIMO\source\repos\BCPgo\AppBCPgo\AppBCPgo\AppBCPgo\obj\Debug\netstandard2.0\AppBCPgo.AssemblyInfo.cs
+C:\Users\MAXIMO\source\repos\BCPgo\AppBCPgo\AppBCPgo\AppBCPgo\obj\Debug\netstandard2.0\AppBCPgo.dll
+C:\Users\MAXIMO\source\repos\BCPgo\AppBCPgo\AppBCPgo\AppBCPgo\obj\Debug\netstandard2.0\AppBCPgo.pdb

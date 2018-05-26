@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBCPgo.Paginas.ValoracionJsonPg"
+             BackgroundColor="White"
+             Title="Ubícanos"     >   
+    <ContentPage.Content>
+        <StackLayout Margin="20,30,0,20">
+
+            <ScrollView>
+            <Grid VerticalOptions="Start">
+                <Grid.RowDefinitions >
+                    <RowDefinition  Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+
+                </Grid.ColumnDefinitions>
+          
+            <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" x:Name="titulo" Style="{StaticResource Font-3}" FontSize="22" Text="Tiendita de Don Pepe" TextColor="DarkOrange"></Label>
+            <Label Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" x:Name="linea" Style="{StaticResource Font-2}" Text="___________________________________"></Label>
+                <Image VerticalOptions="Start" Source="tiempo.png" HeightRequest="40" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2"></Image>
+                <Label Grid.Column="1" Grid.Row="2"  x:Name="tiempo" Style="{StaticResource Font-2}" FontSize="19" TextColor="#4f4f4f" Text="Tiempo estimado de atencion"></Label>
+                <Label Grid.Column="1" Grid.Row="3"  x:Name="tiempoval" Style="{StaticResource Font-1}"  FontSize="19" TextColor="#828282" Text="20 min"></Label>
+                <Image VerticalOptions="Start" Source="horario.png" HeightRequest="40" Grid.Column="0" Grid.Row="4" Grid.RowSpan="2"></Image>
+                <Label Grid.Column="1" Grid.Row="4"  x:Name="horario" Style="{StaticResource Font-2}"  FontSize="19" TextColor="#4f4f4f" Text="Horario de atencion"></Label>
+                <Label Grid.Column="1" Grid.Row="5" x:Name="horarioval" Style="{StaticResource Font-1}"  FontSize="19" TextColor="#828282" Text="9 a.m. a 8 p.m."></Label>
+                <Image VerticalOptions="Start" Source="estado.png" HeightRequest="40" Grid.Column="0" Grid.Row="6" Grid.RowSpan="2"></Image>
+                <Label Grid.Column="1" Grid.Row="6"  x:Name="estado" Style="{StaticResource Font-2}"  FontSize="19" TextColor="#4f4f4f" Text="Estado"></Label>
+                <Label Grid.Column="1" Grid.Row="7" x:Name="estadoval" Style="{StaticResource Font-1}"  FontSize="19" TextColor="#828282" Text="4"></Label>
+                <Image VerticalOptions="Start" Source="operaciones.png" HeightRequest="40" Grid.Column="0" Grid.Row="8" Grid.RowSpan="2"></Image>
+                <Label Grid.Column="1" Grid.Row="8"  x:Name="operaciones" Style="{StaticResource Font-2}"  FontSize="19"  TextColor="#4f4f4f" Text="Operaciones"></Label>
+                <Label Grid.Column="1" Grid.Row="9" x:Name="operacionval" Style="{StaticResource Font-1}"  FontSize="19" TextColor="#828282" Text="Depositos, Retiros"></Label>
+                <Image VerticalOptions="Start" Source="puntuacion.png" HeightRequest="40" Grid.Column="0" Grid.Row="10" Grid.RowSpan="2"></Image>
+                <Label Grid.Column="1" Grid.Row="10"  x:Name="puntuacion" Style="{StaticResource Font-2}"  FontSize="19" TextColor="#4f4f4f" Text="Puntuaciones"></Label>
+                <!--<Label Grid.Column="1" Grid.Row="11" x:Name="puntuacionval" Style="{StaticResource Font-1}"  FontSize="19" TextColor="#828282" Text="Depositos, Retiros"></Label>-->
+                <Image HorizontalOptions="Start" VerticalOptions="Start" Source="stars1.png" HeightRequest="25" Grid.Column="1" Grid.Row="11"></Image>
+
+                <Image VerticalOptions="Start" Source="calificacion.png" HeightRequest="40" Grid.Column="0" Grid.Row="12" Grid.RowSpan="2"></Image>
+                <Label Grid.Column="1" Grid.Row="12"  x:Name="calificacion" Style="{StaticResource Font-2}"  FontSize="19" TextColor="#4f4f4f" Text="Calificaciones"></Label>
+                <Image HorizontalOptions="Start" Source="stars2.png" HeightRequest="40" Grid.Column="1" Grid.Row="13">
+
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+
+                    </Image.GestureRecognizers>
+
+                </Image>
+                <!--<Label Grid.Column="1" Grid.Row="13" x:Name="calificacionval" Style="{StaticResource Font-1}"  FontSize="19"  TextColor="#828282" Text="Depositos, Retiros"></Label>-->
+
+
+
+            </Grid>
+            </ScrollView>
+            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" HeightRequest="60">
+        <Image x:Name="ubicanos" Source="tab1.jpg"></Image>
+        <Image x:Name="agente" Source="tab2.jpg"></Image>
+        <Image x:Name="cajeros" Source="tab3.jpg"></Image>
+        <Image x:Name="menu" Source="tab4.jpg"></Image>
+    </StackLayout>-->
+
+        </StackLayout>
+   
+    </ContentPage.Content>
+</ContentPage>

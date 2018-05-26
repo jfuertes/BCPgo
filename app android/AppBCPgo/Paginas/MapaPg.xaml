@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="AppBCPgo.Paginas.MapaPg"
+             BackgroundColor="White"
+             Title="Ubícanos"  
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HeightRequest="55" VerticalOptions="Start">
+
+                <Image x:Name="navegador" Source="nav.jpg" HorizontalOptions="CenterAndExpand"></Image>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" >
+                <!--<ScrollView Orientation="Horizontal">
+                    <Image x:Name="mapa" Source="mapa.PNG" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+
+
+                        </Image.GestureRecognizers>
+                    </Image>
+                </ScrollView>-->
+                <maps:Map IsVisible="True" x:Name="MapView" WidthRequest="400" HeightRequest="400" />
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" HeightRequest="60">
+                <Image x:Name="ubicanos" Source="tab1.jpg"></Image>
+                <Image x:Name="agente" Source="tab2.jpg"></Image>
+                <Image x:Name="cajeros" Source="tab3.jpg"></Image>
+                <Image x:Name="menu" Source="tab4.jpg"></Image>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
