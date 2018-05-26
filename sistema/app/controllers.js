@@ -26,6 +26,8 @@ window.map="";
 
 .controller('RegistrateController',['$scope', '$http', function($scope, $http){
   }])
+.controller('mapaController',['$scope', '$http', function($scope, $http){
+  }])
 
 
 .controller('perfilController',['$scope', '$http', function($scope, $http){
