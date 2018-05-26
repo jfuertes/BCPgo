@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style>
+      #map {width:100%;height: 600px; background-color: #CCC;}
+      td {padding: 5px 3px ;}
+      #up_right{width: 77%; float:right;}
+      #up{width: 300px;height: 75px;}
+      #up_left{width: 23%; float:left; margin-top: 15px; }
+</style>
+ <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+  <h3>Ubicacion:</h3>
+   <div id="map"></div>
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: -12.030014, lng: -77.058158};
+        var myLatLng2 = {lat: -12.040014, lng: -77.048158};
+        var myLatLng3 = {lat: -12.020014, lng: -77.068158};
+        var myLatLng4 = {lat: -12.010014, lng: -77.078158};
+
+          var contentString = "<div id='up'><div id='up_right'><table style='font-size: 0.95em;'><tbody><tr><td>Alarma Vecinal</td></tr><tr><td><b>ID: 123900</b></td></tr></table></div><div id='up_left'><img src='img/sirena.png'/></div></div>"+"<hr>"+"<table style='font-size: 0.875em;'><tr><td><i class='fa fa-map-marker fa-1x'></i></td><td>Av. siempreviva 2630</td></tr><tr><td><i class='fa fa-phone fa-1.5x'></i></td><td>Num de alarma: 93188189</td></tr><tr><td><i class='fa fa-clock-o fa-1x'></i></td><td>Num de contacto: 931749789</td>"+
+          "</tr><tr><td><i class='fa fa-user fa-1x'></i></td><td>Sr. Jair Fuertes</td></tr></tbody></table>";
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxHeight: 400,
+          maxWidth: 300
+        });
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatLng
+        });
+        var image = 'img/sirena.png';
+
+        var marker = new google.maps.Marker({
+
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!',
+          icon: image
+        }); 
+        var marker2 = new google.maps.Marker({
+
+          position: myLatLng2,
+          map: map,
+          title: 'Hello World!',
+          icon: image
+        });
+        var marker3 = new google.maps.Marker({
+
+          position: myLatLng3,
+          map: map,
+          title: 'Hello World!',
+          icon: image
+        });
+        var marker4 = new google.maps.Marker({
+
+          position: myLatLng4,
+          map: map,
+          title: 'Hello World!',
+          icon: image
+        });
+
+
+
+         marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFXpZowO_X9qWM02i084Z8PMRp5f5sgI8&callback=initMap">
+    </script>
+
+
+  
+  </div>
+
+  </body>
+</html>

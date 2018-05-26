@@ -27,6 +27,11 @@ var app = angular.module('eissonApp', [
           caseInsensitiveMatch: true,
           controller: 'acercaController',
           activetab: 'centros'
+        }). when('/mapa', {
+          templateUrl: 'views/mapa.html',
+          caseInsensitiveMatch: true,
+          controller: 'mapaController',
+          activetab: 'centros'
         }).
          when('/registrate', {
           templateUrl: 'views/RegistrarAgenteBCP.html',
