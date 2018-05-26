@@ -7,7 +7,7 @@
 
  $id=$_POST["id"];
  $tiempo_estimado=$_POST["tiempo_estimado"];
-
+var_dump($_POST);
  $q = 'UPDATE establecimientos SET tiempo_estimado= :tiempo_estimado where id=:id';
 
 		
