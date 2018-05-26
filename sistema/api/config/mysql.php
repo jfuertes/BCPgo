@@ -5,7 +5,7 @@
  *
  * @author Eisson
  */
-class EissonConnect {
+class Connect {
 
     private $dbh;
 
