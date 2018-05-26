@@ -22,7 +22,7 @@ define('DB_NAME', 'esdeporv_vacuna');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'alarmas');
+define('DB_NAME', 'bcp_go');
 
 
 
